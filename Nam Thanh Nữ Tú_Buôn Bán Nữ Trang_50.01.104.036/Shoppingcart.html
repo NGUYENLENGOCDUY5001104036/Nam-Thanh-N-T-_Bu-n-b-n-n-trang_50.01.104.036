@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppingcart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 100vw;
+            height: auto;
+        }
+
+        .wrap {
+            display: flex;
+            flex: 1;
+        }
+
+        .box1 {
+            width: 65%;
+
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box2 {
+            width: 35%;
+            background-color: #957461;
+            margin: 20px 0 0 20px;
+            border-radius: 20px;
+            color: #fff;
+            font-size: large;
+            display: flex;
+            align-items: center;
+            border-style: outset;
+            box-sizing: border-box;
+        }
+
+        .product {
+            height: 200px;
+            width: 100%;
+            margin: 5px 0;
+            display: flex;
+            border-radius: 10px;
+            border-style: outset;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .wrapproduct {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            justify-content: space-between;
+        }
+
+        .boximg {
+            height: 150px;
+            width: 150px;
+            background-color: bisque;
+            margin: 20px;
+            border-radius: 10px;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        p {
+            margin: 0;
+            width: 100%;
+        }
+
+        .boxp {
+            height: 150px;
+            width: 250px;
+            border-radius: 10px;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            font-size: x-large;
+        }
+
+        .boxnumber {
+            height: 150px;
+            width: 200px;
+            border-radius: 10px;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .inputnumber {
+            width: 80px;
+            height: 50px;
+            font-size: x-large;
+            font-weight: 600;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: x-large;
+        }
+        hr {
+            color: black;
+            background-color: black;
+            border: 1px solid black;
+            width: 100%;
+        }
+        .wrap2 {
+            display: flex;
+            flex-direction: column;
+        }
+        .sectionbox2 {
+            height: 110px;
+            width: 92%;
+            background-color: brow;
+            border-radius: 20px;
+            margin: 20px;
+        }
+        .sectionbox2 input {
+            height: 90px;
+            width: 100%;
+            border-radius: 10px;
+            background-color: #CEBBA6;
+            font-size: large;
+        }
+        input::placeholder {
+            color: #fff;
+        }
+        .boxcard {
+            height: 85px;
+            width: 20%;
+            background-color: #CEBBA6;
+            border-radius: 10px;
+            object-fit: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+  .tracking-in-expand {
+	animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+ @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrap">
+            <div class="box1">
+                <p>
+                    <p><a href="Shop.html" class="tracking-in-expand"> <i class="fa-solid fa-less-than"></i> Shopping Continue </a>
+                        <img style="height: 40px;width: 100px;" src="https://allimages.sgp1.digitaloceanspaces.com/tipeduvn/2022/01/Tai-hinh-dong-de-thuong-cute-va-ngo-nghinh-dang.gif" alt="cute">
+
+                    </p>
+                    <hr>
+    
+                    <p > <span style="font-size: x-large">Shopping cart </span><br>
+                        You have 3 item in your cart
+                    </p>
+                </p>
+                
+                <div class="product">
+                    <div class="wrapproduct">
+                        <div style="width: 50%;display: flex;">
+                            <div class="boximg"><img src="assets/img/pendant1.jpg"> </div>
+                            <div class="boxp">
+                                <p>Diamond Wide Band Bracelet </p>
+                            </div>
+                        </div>
+                        <div style="display: flex; width: 50%;justify-content: right;">
+                            <div style="display: flex;align-items: center;"><input class="inputnumber" type="number" value="1" style="object-fit: cover;"></div>
+                            <div class="boxnumber">Price: 500,000 VND <br>Discount: 400,000 VND</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="wrapproduct">
+                        <div style="width: 50%;display: flex;">
+                            <div class="boximg"><img src="assets/img/bracelet3.jpg"> </div>
+                            <div class="boxp">
+                                <p>White Gold Blue  White Diamond Necklace </p>
+                            </div>
+                        </div>
+                        <div style="display: flex; width: 50%;justify-content: right;">
+                            <div style="display: flex;align-items: center;"><input class="inputnumber" type="number" value="1" style="object-fit: cover;"></div>
+                            <div class="boxnumber">Price: 1,000,000 VND <br>Discount: 900,000 VND</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="wrapproduct">
+                        <div style="width: 50%;display: flex;">
+                            <div class="boximg"><img src="assets/img/earing1.jpg"> </div>
+                            <div class="boxp">
+                                <p>Rose Gold Ruby and Diamond Drop Earing </p>
+                            </div>
+                        </div>
+                        <div style="display: flex; width: 50%;justify-content: right;">
+                            <div style="display: flex;align-items: center;"><input class="inputnumber" type="number" value="1" style="object-fit: cover;"></div>
+                            <div class="boxnumber">Price: 500,000 VND <br>Discount: 400,000 VND</div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="box2">
+                <div class="wrap2">
+                    <div class="sectionbox2" style="height: fit-content;"> <h2 style="margin: 0">Card Details</h2>
+                    </div>
+                    <div class="sectionbox2">
+                        <p>Card type</p>
+                        <div style="display: flex;justify-content: space-between;">
+                            <div class="boxcard"><img src="assets/img/mbbank.jpg" alt="Mb bank"></div>
+                            <div class="boxcard"><img src="assets/img/agribank.jpg" alt="Agribank"></div>
+                            <div class="boxcard"><img src="assets/img/vietinbank.jpg" alt="Vietinbank"></div>
+                            <div class="boxcard"><h4>See all</h4></div>
+
+                    </div>
+                        
+                    </div>
+                    <div class="sectionbox2" style="display: flex;flex-direction: column;">
+                        <label for="Name">Name on card</label>
+                        <input type="text" placeholder="Name" id="Name">
+                    </div>
+                    <div class="sectionbox2">
+                        <label for="cardnumder">Card Number</label>
+                        <input type="number" id="cardnumber" placeholder="1111 2222 3333 4444">
+                    </div>
+                    <div class="sectionbox2" style="display: flex;flex: 1;align-items: center;gap: 10px;">
+                        <div style="width: 50%;">
+                            <label for="date">Expiration date</label>
+                            <input type="date" style="color: #fff;" id="date">
+                        </div>
+                        <div style="width: 50%;">
+                            <label for="cvv">CVV</label>
+                            <input type="number" id="cvv" placeholder="123">
+                        </div>
+                    </div>
+                    <hr style="width: 80%; background-color: #CEBBA6; height: 2px; border: none;">
+                    <div class="sectionbox2" style="display: flex;justify-content: space-between;">
+                        <div style="text-align: left;">
+                            <p>Subtotal
+                            <br>Shipping
+                            <br>Total (Tax incl.)
+                        </p>
+                        </div>
+                        <div style="text-align: right;">
+                            <p>
+                                1,700,000 VND
+                                <br>20,000 VND
+                                <br>1,720,000 VND
+                            </p>
+                        </div>
+                    </div>
+                    <div class="sectionbox2">
+                        <button style="display: flex;justify-content: space-between;width: 100%;height: 80%;border-radius: 10px;background-color: #62C560;color: #fff;font-size: large;align-items: center;">
+                            <span style="margin: 10px;">1,720,000 VND</span>
+                            <span style="margin: 10px;font-size: x-large;">Checkout</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

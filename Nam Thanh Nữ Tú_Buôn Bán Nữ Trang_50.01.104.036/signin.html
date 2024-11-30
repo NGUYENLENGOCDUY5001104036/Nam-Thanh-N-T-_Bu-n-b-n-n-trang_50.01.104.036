@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create a new Account</title>
+    <link rel="stylesheet" href="assets/css/shop.css">
+    <style>
+        .section {
+            background-color: #FFf;
+            color: #4d1f08;
+            padding-top: 100px;
+            padding-bottom: 130px;
+            font-family: Arial, sans-serif, verdana;
+        }
+
+        .container {
+            width: 1080px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .title {
+            font-size: 50px;
+            font-weight: 700px;
+            color: #121a2a;
+            margin-top: 0;
+            margin-bottom: 40px;
+            margin-left: 10px;
+            text-align: left;
+        }
+
+
+        form {
+            background: #ffffff;
+            display: inline-block;
+            border-radius: 10px;
+            margin-left: 10px;
+            border: 1px solid black;
+
+
+        }
+
+        form span {
+            display: inline-block;
+            width: 500px;
+            background: #ffffff;
+            margin: 10px 5px 5px 18px;
+            border-radius: 10px;
+            border-width: 10px;
+
+        }
+
+        .form input,
+        .form select {
+            width: 150px;
+            height: 20px;
+            margin: 10px 10px;
+            box-sizing: border-box;
+        }
+
+        .formselect {
+            margin: 5px 5px;
+        }
+
+        .forminput[type='submit'] {
+            display: inline-block;
+            margin: 30px 10px 12px 98px;
+            width: 300px;
+            height: 30px;
+            color: #ffffff;
+            background-color: #957461;
+            border-radius: 10px;
+        }
+
+        .kc {
+            margin-top: 30px;
+            margin-left: 20px;
+            width: 18px;
+            height: 18px;
+        }
+
+        .hcn {
+            margin-left: 20px;
+            border-radius: 10px;
+            width: 300px;
+            height: 30px;
+            border-style: solid;
+        }
+
+        hr {
+            width: 22%;
+            margin-left: 1px;
+            margin-top: 30px;
+        }
+
+        .sign {
+            margin-left: 20px;
+            margin-top: 30px;
+            border-radius: 10px;
+            width: 180px;
+            height: 50px;
+
+
+        }
+
+        .bg {
+            width: 600px;
+            height: 800px;
+            margin-left: 560px;
+            margin-top: -700px;
+            border-radius: 10px;
+        }
+
+        .lg {
+            width: 30px;
+            height: 30px;
+        }
+
+        a {
+            color: #4d1f08;
+            font-size: medium;
+            font-weight: 600;
+            text-decoration: none;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 class="tracking-in-contract">Shop Nam Thanh Nữ Tú</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Shop.html">Shop</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contacts.html">Contact</a></li>
+                    <li><a href="Shoppingcart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
+                    <img style="height: 40px;width: 100px;" src="https://allimages.sgp1.digitaloceanspaces.com/tipeduvn/2022/01/Tai-hinh-dong-de-thuong-cute-va-ngo-nghinh-dang.gif" alt="cute">
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="section">
+        <div class="container">
+
+            <h3 class="title">Get Started Now</h3>
+            <form>
+                <span><b>Name</b></span><br>
+                <input type="text" name="name" class="hcn"><br>
+                <span><b>Email address</b></span><br>
+                <input type="text" name="Email" class="hcn"><br>
+                <span><b>Password</b></span><br>
+                <input type="password" name="password" class="hcn"><br>
+                <label class="formselect"><input type="checkbox" class="kc">I agree to the <a href="#"
+                        title="Terms & Policy" style="color: blue;">terms & policy</a></label><br>
+                <button type="submit" class="forminput"><b><a href="Home.html">Signup</a></b></button>
+
+            </form>
+            <hr>
+            <div style="margin-left: 250px; margin-top: -18px">Or</div>
+            <hr style=" width: 24%;margin-left: 280px; margin-top: -10px;">
+            <button type="submit" class="sign" style="margin-left: 40px;"><i class="fa-brands fa-google"></i><a
+                    href="Home.html"> Sign in with Google </a></button>
+            <button type="submit" class="sign" style="margin-left: 70px;"><i class="fa-brands fa-apple"></i> <a
+                    href="Home.html">Sign in with Apple </a></button>
+            <div>
+                <H3 style="margin-left: 160px ;">Don't have an account? <a href="Signup.html" title="Sign up"
+                        style="text-decoration: none; color: blue;">Sign up</a></H3>
+            </div>
+            <img src="assets/img/signup.jpg" class="bg">
+        </div>
+        <footer>
+            <p style="text-align: center;"> @2024 Shop Nam Thanh Nữ Tú. All Rights Reserved.</p>
+        </footer>
+</body>
+
+</html>
