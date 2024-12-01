@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Sản Phẩm</title>
+    <link rel="stylesheet" href="assets/css/admin.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .product-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .product-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-box img {
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            flex: 1;
+            padding: 0 15px;
+        }
+
+        .product-info h2 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .product-info p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .product-price {
+            text-align: center;
+        }
+
+        .product-price p {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .product-price .discount {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .product-stock {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .product-stock p {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>Nam Thanh Nữ Tú</h2>
+        <ul>
+            <li><a href="Admin.html">Dashboard</a></li>
+            <li><a href="Quản lý người dùng.html">Quản lý người dùng</a></li>
+            <li><a href="Quản lý sản phẩm.html">Quản lý sản phẩm</a></li>
+            <li><a href="Thống kê.html">Thống kê</a></li>
+            <li><a href="Home.html">Đăng xuất</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="header">
+            <h1>Quản Lý Sản Phẩm</h1>
+        </div>
+        <div class="content">
+            <div class="product-container">
+                <!-- Box 1 -->
+                <div class="product-box">
+                    <img src="assets/img/pendant1.jpg" alt="Sản phẩm 1">
+                    <div class="product-info">
+                        <h2>Diamond Wide Band Bracelet</h2>
+                        <p>Trang sức cao cấp</p>
+                    </div>
+                    <div class="product-price">
+                        <p>Giá: <span>500,000đ</span></p>
+                        <p class="discount">Giảm giá: 400,000đ</p>
+                    </div>
+                    <div class="product-stock">
+                        <p>Đã bán: 100</p>
+                        <p>Trong kho: 5</p>
+                    </div>
+                </div>
+
+                <!-- Tương tự Box 2 đến Box 12 -->
+                <!-- Thay đổi thông tin sản phẩm, giá cả, số lượng -->
+
+                <!-- Box 2 -->
+                <div class="product-box">
+                    <img src="assets/img/pendant2.jpg" alt="Sản phẩm 2">
+                    <div class="product-info">
+                        <h2>Mlti Sapphire & Diamond Bracelet</h2>
+                        <p>Thiết kế tinh xảo</p>
+                    </div>
+                    <div class="product-price">
+                        <p>Giá: <span>600,000đ</span></p>
+                        <p class="discount">Giảm giá: 500,00đ</p>
+                    </div>
+                    <div class="product-stock">
+                        <p>Đã bán: 110</p>
+                        <p>Trong kho: 10</p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="assets/img/pendent3.jpg" alt="Sản phẩm 2">
+                    <div class="product-info">
+                        <h2>While Sapphier Band Bracelet</h2>
+                        <p>Thiết kế tinh xảo</p>
+                    </div>
+                    <div class="product-price">
+                        <p>Giá: <span>700,000đ</span></p>
+                        <p class="discount">Giảm giá: 600,00đ</p>
+                    </div>
+                    <div class="product-stock">
+                        <p>Đã bán: 120</p>
+                        <p>Trong kho: 15</p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="assets/img/bracelet1.jpg" alt="Sản phẩm 2">
+                    <div class="product-info">
+                        <h2>Rose Gold Diamond Vine Necklace</h2>
+                        <p>Thiết kế tinh xảo</p>
+                    </div>
+                    <div class="product-price">
+                        <p>Giá: <span>800,000đ</span></p>
+                        <p class="discount">Giảm giá: 700,000đ</p>
+                    </div>
+                    <div class="product-stock">
+                        <p>Đã bán: 130</p>
+                        <p>Trong kho: 15</p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="assets/img/bracelet2.jpg" alt="Sản phẩm 2">
+                    <div class="product-info">
+                        <h2>While Gold Blue & While Diamond Necklace</h2>
+                        <p>Thiết kế tinh xảo</p>
+                    </div>
+                    <div class="product-price">
+                        <p>Giá: <span>900,000đ</span></p>
+                        <p class="discount">Giảm giá: 800,000đ</p>
+                    </div>
+                    <div class="product-stock">
+                        <p>Đã bán: 140</p>
+                        <p>Trong kho: 20</p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="assets/img/bracelet3.jpg" alt="Sản phẩm 2">
+                    <div class="product-info">
+                        <h2>While Gold Diamond Palm Necklace</h2>
+                        <p>Thiết kế tinh xảo</p>
+                    </div>
+                    <div class="product-price">
+                        <p>Giá: <span>1,000,000đ</span></p>
+                        <p class="discount">Giảm giá: 900,000đ</p>
+                    </div>
+                    <div class="product-stock">
+                        <p>Đã bán: 150</p>
+                        <p>Trong kho: 25</p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="assets/img/earing1.jpg" alt="Sản phẩm 2">
+                    <div class="product-info">
+                        <h2>Rose Gold Ruby and Diamond Drop Earing</h2>
+                        <p>Thiết kế tinh xảo</p>
+                    </div>
+                    <div class="product-price">
+                        <p>Giá: <span>1,100,000đ</span></p>
+                        <p class="discount">Giảm giá: 1,000,000đ</p>
+                    </div>
+                    <div class="product-stock">
+                        <p>Đã bán: 100</p>
+                        <p>Trong kho: 5</p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="assets/img/earing2.jpg" alt="Sản phẩm 2">
+                    <div class="product-info">
+                        <h2>Rose Gold Tanzanite and Diamond Earing</h2>
+                        <p>Thiết kế tinh xảo</p>
+                    </div>
+                    <div class="product-price">
+                        <p>Giá: <span>1,200,000đ</span></p>
+                        <p class="discount">Giảm giá: 1,100,000đ</p>
+                    </div>
+                    <div class="product-stock">
+                        <p>Đã bán: 110</p>
+                        <p>Trong kho: 10</p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="assets/img/earing3.jpg" alt="Sản phẩm 2">
+                    <div class="product-info">
+                        <h2>Rose Gold Amethyst</h2>
+                        <p>Thiết kế tinh xảo</p>
+                    </div>
+                    <div class="product-price">
+                        <p>Giá: <span>1,300,000đ</span></p>
+                        <p class="discount">Giảm giá: 1,200,000đ</p>
+                    </div>
+                    <div class="product-stock">
+                        <p>Đã bán: 120</p>
+                        <p>Trong kho: 15</p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="assets/img/ring1.jpg" alt="Sản phẩm 2">
+                    <div class="product-info">
+                        <h2>Emarald Diamond Ring</h2>
+                        <p>Thiết kế tinh xảo</p>
+                    </div>
+                    <div class="product-price">
+                        <p>Giá: <span>1,100,000đ</span></p>
+                        <p class="discount">Giảm giá: 1,000,000đ</p>
+                    </div>
+                    <div class="product-stock">
+                        <p>Đã bán: 130</p>
+                        <p>Trong kho: 20</p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="assets/img/ring2.jpg" alt="Sản phẩm 2">
+                    <div class="product-info">
+                        <h2>While Gold Sapphire Diamond Ring</h2>
+                        <p>Thiết kế tinh xảo</p>
+                    </div>
+                    <div class="product-price">
+                        <p>Giá: <span>1,200,000đ</span></p>
+                        <p class="discount">Giảm giá: 1,100,000đ</p>
+                    </div>
+                    <div class="product-stock">
+                        <p>Đã bán: 150</p>
+                        <p>Trong kho: 25</p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="assets/img/ring3.jpg" alt="Sản phẩm 2">
+                    <div class="product-info">
+                        <h2>While Gold Diamond Soliataire Ring</h2>
+                        <p>Thiết kế tinh xảo</p>
+                    </div>
+                    <div class="product-price">
+                        <p>Giá: <span>1,300,000đ</span></p>
+                        <p class="discount">Giảm giá: 1,200,000đ</p>
+                    </div>
+                    <div class="product-stock">
+                        <p>Đã bán: 100</p>
+                        <p>Trong kho: 5</p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="assets/img/blog1.jpg" alt="Sản phẩm 2">
+                    <div class="product-info">
+                        <h2>Unlimited</h2>
+                        <p></p>
+                    </div>
+                    <div class="product-price">
+                        <p>Giá: <span>999,999,999đ</span></p>
+                        <p class="discount">Giảm giá: 999,999,999đ</p>
+                    </div>
+                    <div class="product-stock">
+                        <p>Đã bán: 0</p>
+                        <p>Trong kho: 0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

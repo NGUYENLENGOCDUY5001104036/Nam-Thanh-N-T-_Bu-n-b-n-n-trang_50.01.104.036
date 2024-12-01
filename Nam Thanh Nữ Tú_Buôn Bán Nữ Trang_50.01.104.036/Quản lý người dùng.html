@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Khách Hàng</title>
+    <link rel="stylesheet" href="assets/css/admin.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f9f9f9;
+            
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .customer-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .customer-box {
+            width: 300px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .customer-box img {
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .customer-box h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .customer-box p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .customer-box .rating {
+            color: #f1c40f;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Nam Thanh Nữ Tú</h2>
+        <ul>
+            <li><a href="Admin.html">Dashboard</a></li>
+            <li><a href="Quản lý người dùng.html">Quản lý người dùng</a></li>
+            <li><a href="Quản lý sản phẩm.html">Quản lý sản phẩm</a></li>
+            <li><a href="Thống kê.html">Thống kê</a></li>
+            <li><a href="Home.html">Đăng xuất</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="header">  <h1>Quản Lý Khách Hàng</h1></div>
+        <div class="content">
+          
+            <div class="customer-container">
+                <!-- Box 1 -->
+                <div class="customer-box">
+                    <img src="https://thejulius.com.vn/wp-content/uploads/2021/07/nguoi-mau-thoi-trang.webp" alt="Khách hàng 1">
+                    <h2>Nguyễn Thị Hoa</h2>
+                    <p>"Dịch vụ ở đây rất tốt! Trang sức đẹp, nhân viên nhiệt tình."</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+        
+                <!-- Box 2 -->
+                <div class="customer-box">
+                    <img src="https://cdn.tuoitre.vn/thumb_w/480/471584752817336320/2023/9/13/base64-1694541228658781514621.png" alt="Khách hàng 2">
+                    <h2>Trần Văn Minh</h2>
+                    <p>"Sản phẩm chất lượng cao, tôi rất hài lòng."</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+        
+                <!-- Box 3 -->
+                <div class="customer-box">
+                    <img src="https://photo.znews.vn/w660/Uploaded/wohaahp/2020_10_11/Nu_nguoi_mau_Trung_Quoc_3a.jpg" alt="Khách hàng 3">
+                    <h2>Lê Thị Hồng</h2>
+                    <p>"Thiết kế tinh xảo, phù hợp với sở thích của tôi."</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+        
+                <!-- Box 4 -->
+                <div class="customer-box">
+                    <img src="https://i.pinimg.com/originals/50/8d/3e/508d3ef7c19c5ddb54c7e7fa38cab143.jpg" alt="Khách hàng 4">
+                    <h2>Đỗ Anh Quân</h2>
+                    <p>"Giá cả hợp lý, dịch vụ chăm sóc khách hàng tuyệt vời."</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+        
+                <!-- Box 5 -->
+                <div class="customer-box">
+                    <img src="https://www.elle.vn/wp-content/uploads/2016/10/03/Fung-La-Next-Top-Model-2016.jpg" alt="Khách hàng 5">
+                    <h2>Phạm Thị Mai</h2>
+                    <p>"Tôi rất ấn tượng với cách phục vụ chuyên nghiệp."</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+        
+                <!-- Box 6 -->
+                <div class="customer-box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-6QWwJoKTdRdM5pueL-fdYhVpHp9QlETdRYWDiDk5YhFU9lQaEuM-zRsu7MbIvbbtN6k&usqp=CAU" alt="Khách hàng 6">
+                    <h2>Vũ Ngọc Ánh</h2>
+                    <p>"Cửa hàng luôn làm tôi cảm thấy hài lòng khi ghé thăm."</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+        
+                <!-- Box 7 -->
+                <div class="customer-box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBEx_CHIj-QquqEHmwC0M-zGW--UsxLqJBZA&s" alt="Khách hàng 7">
+                    <h2>Trương Thanh Tùng</h2>
+                    <p>"Tôi rất thích các mẫu trang sức mới của cửa hàng."</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+        
+                <!-- Box 8 -->
+                <div class="customer-box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_9OwnGju_ujjI7EG7RGsC2ft7Vd8UbuUrUQ&s" alt="Khách hàng 8">
+                    <h2>Nguyễn Quỳnh Anh</h2>
+                    <p>"Trang sức đẹp, chất lượng, tôi sẽ quay lại lần nữa!"</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+        
+                <!-- Box 9 -->
+                <div class="customer-box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdMFoGME543ID-C7iXY29dvk4bFYzjtwsCwQ&s" alt="Khách hàng 9">
+                    <h2>Phan Hoàng Nam</h2>
+                    <p>"Sản phẩm đúng như mô tả, dịch vụ rất chu đáo."</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+        
+                <!-- Box 10 -->
+                <div class="customer-box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP0-QPgzmv0IMi2XPa2ENvg8EvXwgVi8KcsA&s" alt="Khách hàng 10">
+                    <h2>Đặng Thị Thanh</h2>
+                    <p>"Mỗi sản phẩm đều rất đẹp và phù hợp với phong cách của tôi."</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

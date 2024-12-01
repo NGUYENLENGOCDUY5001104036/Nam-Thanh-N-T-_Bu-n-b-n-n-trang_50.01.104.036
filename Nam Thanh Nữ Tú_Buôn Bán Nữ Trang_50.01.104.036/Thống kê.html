@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Admin Quản Lý</title>
+    <link rel="stylesheet" href="assets/css/admin.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        .form-container {
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Nam Thanh Nữ Tú</h2>
+        <ul>
+            <li><a href="Admin.html">Dashboard</a></li>
+            <li><a href="Quản lý người dùng.html">Quản lý người dùng</a></li>
+            <li><a href="Quản lý sản phẩm.html">Quản lý sản phẩm</a></li>
+            <li><a href="Thống kê.html">Thống kê</a></li>
+            <li><a href="Home.html">Đăng xuất</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+        <div class="header">
+            Trang thống kê sản phẩm
+        </div>
+        <div class="content">
+            <h1>Ứng dụng Quản Lý Sản Phẩm</h1>
+
+            <!-- Form thêm sản phẩm -->
+            <div class="form-container">
+                <h2>Thêm sản phẩm mới</h2>
+                <input type="text" id="newProductName" placeholder="Nhập tên sản phẩm" />
+                <button onclick="addProduct()">Thêm</button>
+                <p id="message"></p>
+            </div>
+
+            <!-- Bảng hiển thị danh sách sản phẩm -->
+            <h2>Danh sách sản phẩm</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody id="productTable"></tbody>
+            </table>
+
+
+        </div>
+    </div>
+    <script>
+        // Mảng lưu danh sách sản phẩm
+        let products = [
+            "Diamond Wide Band Bracelet",
+            "Mlti Sapphire & Diamond Bracelet",
+            "While Sapphier Band Bracelet",
+            "Rose Gold Diamond Vine Necklace",
+            "While Gold Blue & While Diamond Necklace",
+            "While Gold Diamond Palm Necklace",
+            "Rose Gold Ruby and Diamond Drop Earing",
+            "Rose Gold Tanzanite and Diamond Earing",
+            "Rose Gold Amethyst",
+            "Emarald Diamond Ring",
+            "While Gold Sapphire Diamond Ring",
+            "While Gold Diamond Soliataire Ring"
+        ];
+
+        // Hiển thị danh sách sản phẩm
+        function displayProducts() {
+            const productTable = document.getElementById("productTable");
+            productTable.innerHTML = ""; // Xóa dữ liệu cũ
+
+            products.forEach((product, index) => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td>${index + 1}</td>
+                    <td onclick="editProduct(${index})">${product}</td>
+                    <td>
+                        <button onclick="deleteProduct(${index})">Xóa</button>
+                    </td>
+                `;
+                productTable.appendChild(row);
+            });
+
+            // Thêm dòng tổng số sản phẩm
+            const totalRow = document.createElement("tr");
+            totalRow.innerHTML = `<td colspan="3">${products.length} sản phẩm</td>`;
+            productTable.appendChild(totalRow);
+        }
+
+        // Thêm sản phẩm mới
+        function addProduct() {
+            const newProductName = document.getElementById("newProductName").value.trim();
+            const message = document.getElementById("message");
+
+            if (newProductName) {
+                products.push(newProductName);
+                message.textContent = "Sản phẩm đã được thêm!";
+                message.style.color = "green";
+                displayProducts();
+            } else {
+                message.textContent = "Vui lòng nhập tên sản phẩm!";
+                message.style.color = "red";
+            }
+
+            document.getElementById("newProductName").value = ""; // Xóa nội dung ô nhập
+        }
+
+        // Sửa tên sản phẩm
+        function editProduct(index) {
+            const newName = prompt("Nhập tên mới cho sản phẩm:", products[index]);
+            if (newName && newName.trim() !== "") {
+                products[index] = newName.trim();
+                displayProducts();
+            }
+        }
+
+        // Xóa sản phẩm
+        function deleteProduct(index) {
+            if (confirm(`Bạn có chắc chắn muốn xóa sản phẩm "${products[index]}"?`)) {
+                products.splice(index, 1);
+                displayProducts();
+            }
+        }
+
+        // Gọi hàm hiển thị danh sách khi tải trang
+        displayProducts();
+    </script>
+</body>
+
+</html>
