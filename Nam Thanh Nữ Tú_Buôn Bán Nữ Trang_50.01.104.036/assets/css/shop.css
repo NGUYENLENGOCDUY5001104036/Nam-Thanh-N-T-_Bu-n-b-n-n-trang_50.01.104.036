@@ -1,4 +1,7 @@
 /* Reset */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AT:ital,wght@0,100..400;1,100..400&display=swap');
+
+
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
@@ -7,7 +10,7 @@ body, h1, h2, h3, p, ul, li {
 
 * {
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 
 }
 body {
@@ -16,6 +19,10 @@ body {
     color: #4d1f08;
     max-width: 100vw;
     max-height: 100vh;
+    background-image: linear-gradient(to right,#0000,#00000099),
+     url("/assets/img/bg2.jpg");
+    background-repeat: none;
+    background-size: cover;
 }
 
 /* Header */
@@ -32,6 +39,10 @@ header {
 }
 header .container {
     position: sticky;
+    display: flex;
+    left: 0;
+    align-items: center;
+    gap: 200px;
 }
 
 header .menu {
@@ -54,8 +65,8 @@ header .menu li {
 header .menu a {
     color: #fff;
     text-decoration: none;
-    font-size: 15px;
-    font-weight: normal;
+    font-size: 20px;
+    font-weight: medium;
 }
 header .menu a:hover, header .menu a:active {
     border: 4px solid #4d1f08;
@@ -76,6 +87,7 @@ header .menu a:hover, header .menu a:active {
 .section h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 .product-grid {
@@ -94,11 +106,20 @@ header .menu a:hover, header .menu a:active {
     border-bottom: 10px solid #eeee;
     justify-content: center;
     border-style: outset;
+    object-fit: cover;
+    overflow: hidden;
+
 }
 img {
-    width: 20em;
+    width: 25em;
     object-fit: cover;
     border-radius: 10px;
+    overflow: hidden;
+    height: 400px;
+}
+img:hover {
+    transition: all 0.6s;
+    transform: scale(0.9);
 }
 .search-bar {
     display: flex;

@@ -20,6 +20,10 @@
             padding: 0;
             font-family: Arial, sans-serif;
             line-height: 1.6;
+            background-image: linear-gradient(to right, #0000, #00000099),
+                url("/assets/img/bg2.jpg");
+            background-repeat: none;
+            background-size: cover;
         }
 
         .container {
@@ -34,10 +38,10 @@
 
         .box1 {
             width: 65%;
-
             margin: 20px;
             display: flex;
             flex-direction: column;
+            color: #fff;
         }
 
         .box2 {
@@ -63,6 +67,8 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            background-color: #fff;
+            color: black;
         }
 
         .wrapproduct {
@@ -113,6 +119,7 @@
             justify-content: center;
             align-items: center;
         }
+
         .inputnumber {
             width: 80px;
             height: 50px;
@@ -122,21 +129,25 @@
             display: flex;
             align-items: center;
         }
+
         a {
             text-decoration: none;
-            color: black;
+            color: white;
             font-size: x-large;
         }
+
         hr {
-            color: black;
-            background-color: black;
-            border: 1px solid black;
+            color: white;
+            background-color: white;
+            border: 1px solid white;
             width: 100%;
         }
+
         .wrap2 {
             display: flex;
             flex-direction: column;
         }
+
         .sectionbox2 {
             height: 110px;
             width: 92%;
@@ -144,6 +155,7 @@
             border-radius: 20px;
             margin: 20px;
         }
+
         .sectionbox2 input {
             height: 90px;
             width: 100%;
@@ -151,9 +163,11 @@
             background-color: #CEBBA6;
             font-size: large;
         }
+
         input::placeholder {
             color: #fff;
         }
+
         .boxcard {
             height: 85px;
             width: 20%;
@@ -166,22 +180,41 @@
             color: #fff;
         }
 
-  .tracking-in-expand {
-	animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-}
+        button {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 80%;
+            border-radius: 10px;
+            background-color: #62C560;
+            color: #fff;
+            font-size: large;
+            align-items: center;
+        }
 
- @keyframes tracking-in-expand {
-    0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+        button:hover {
+            color: #62C560;
+            background-color: #fff;
+        }
+
+        .tracking-in-expand {
+            animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        }
+
+        @keyframes tracking-in-expand {
+            0% {
+                letter-spacing: -0.5em;
+                opacity: 0;
+            }
+
+            40% {
+                opacity: 0.6;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 
@@ -190,17 +223,20 @@
         <div class="wrap">
             <div class="box1">
                 <p>
-                    <p><a href="Shop.html" class="tracking-in-expand"> <i class="fa-solid fa-less-than"></i> Shopping Continue </a>
-                        <img style="height: 40px;width: 100px;" src="https://allimages.sgp1.digitaloceanspaces.com/tipeduvn/2022/01/Tai-hinh-dong-de-thuong-cute-va-ngo-nghinh-dang.gif" alt="cute">
+                    <p><a href="Shop.html" class="tracking-in-expand"> <i class="fa-solid fa-less-than"></i> Shopping
+                            Continue </a>
+                        <img style="height: 40px;width: 100px;"
+                            src="https://allimages.sgp1.digitaloceanspaces.com/tipeduvn/2022/01/Tai-hinh-dong-de-thuong-cute-va-ngo-nghinh-dang.gif"
+                            alt="cute">
 
                     </p>
                     <hr>
-    
-                    <p > <span style="font-size: x-large">Shopping cart </span><br>
+
+                    <p> <span style="font-size: x-large">Shopping cart </span><br>
                         You have 3 item in your cart
                     </p>
                 </p>
-                
+
                 <div class="product">
                     <div class="wrapproduct">
                         <div style="width: 50%;display: flex;">
@@ -210,7 +246,8 @@
                             </div>
                         </div>
                         <div style="display: flex; width: 50%;justify-content: right;">
-                            <div style="display: flex;align-items: center;"><input class="inputnumber" type="number" value="1" style="object-fit: cover;"></div>
+                            <div style="display: flex;align-items: center;"><input class="inputnumber" type="number"
+                                    value="1" style="object-fit: cover;"></div>
                             <div class="boxnumber">Price: 500,000 VND <br>Discount: 400,000 VND</div>
                         </div>
 
@@ -222,11 +259,12 @@
                         <div style="width: 50%;display: flex;">
                             <div class="boximg"><img src="assets/img/bracelet3.jpg"> </div>
                             <div class="boxp">
-                                <p>White Gold Blue  White Diamond Necklace </p>
+                                <p>White Gold Blue White Diamond Necklace </p>
                             </div>
                         </div>
                         <div style="display: flex; width: 50%;justify-content: right;">
-                            <div style="display: flex;align-items: center;"><input class="inputnumber" type="number" value="1" style="object-fit: cover;"></div>
+                            <div style="display: flex;align-items: center;"><input class="inputnumber" type="number"
+                                    value="1" style="object-fit: cover;"></div>
                             <div class="boxnumber">Price: 1,000,000 VND <br>Discount: 900,000 VND</div>
                         </div>
 
@@ -242,7 +280,8 @@
                             </div>
                         </div>
                         <div style="display: flex; width: 50%;justify-content: right;">
-                            <div style="display: flex;align-items: center;"><input class="inputnumber" type="number" value="1" style="object-fit: cover;"></div>
+                            <div style="display: flex;align-items: center;"><input class="inputnumber" type="number"
+                                    value="1" style="object-fit: cover;"></div>
                             <div class="boxnumber">Price: 500,000 VND <br>Discount: 400,000 VND</div>
                         </div>
 
@@ -252,7 +291,8 @@
             </div>
             <div class="box2">
                 <div class="wrap2">
-                    <div class="sectionbox2" style="height: fit-content;"> <h2 style="margin: 0">Card Details</h2>
+                    <div class="sectionbox2" style="height: fit-content;">
+                        <h2 style="margin: 0">Card Details</h2>
                     </div>
                     <div class="sectionbox2">
                         <p>Card type</p>
@@ -260,10 +300,12 @@
                             <div class="boxcard"><img src="assets/img/mbbank.jpg" alt="Mb bank"></div>
                             <div class="boxcard"><img src="assets/img/agribank.jpg" alt="Agribank"></div>
                             <div class="boxcard"><img src="assets/img/vietinbank.jpg" alt="Vietinbank"></div>
-                            <div class="boxcard"><h4>See all</h4></div>
+                            <div class="boxcard">
+                                <h4>See all</h4>
+                            </div>
 
-                    </div>
-                        
+                        </div>
+
                     </div>
                     <div class="sectionbox2" style="display: flex;flex-direction: column;">
                         <label for="Name">Name on card</label>
@@ -287,9 +329,9 @@
                     <div class="sectionbox2" style="display: flex;justify-content: space-between;">
                         <div style="text-align: left;">
                             <p>Subtotal
-                            <br>Shipping
-                            <br>Total (Tax incl.)
-                        </p>
+                                <br>Shipping
+                                <br>Total (Tax incl.)
+                            </p>
                         </div>
                         <div style="text-align: right;">
                             <p>
@@ -300,7 +342,7 @@
                         </div>
                     </div>
                     <div class="sectionbox2">
-                        <button style="display: flex;justify-content: space-between;width: 100%;height: 80%;border-radius: 10px;background-color: #62C560;color: #fff;font-size: large;align-items: center;">
+                        <button>
                             <span style="margin: 10px;">1,720,000 VND</span>
                             <span style="margin: 10px;font-size: x-large;">Checkout</span>
                         </button>
